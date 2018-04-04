@@ -1,0 +1,383 @@
+@charset "UTF-8";
+/**
+ * author: zhanghuan
+ * created: 2018/4/4
+ * describe: 重置样式
+ */
+/*reset*/
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    background: #F2F2F2;
+    font-size: 14px;
+    font-family: Arial, 'Microsoft Yahei', 'Microsoft Yahei In-Bold', 'Apple LiGothic Medium';
+    color: #222222;
+    width: 100%;
+    height: 100%;
+}
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+
+blockquote, q {
+    quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+
+a {
+    margin: 0;
+    padding: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+    text-decoration: none;
+}
+
+ins {
+    background-color: #ff9;
+    color: #000;
+    text-decoration: none;
+}
+
+mark {
+    background-color: #ff9;
+    color: #000;
+    font-style: italic;
+    font-weight: bold;
+}
+
+del {
+    text-decoration: line-through;
+}
+
+abbr[title], dfn[title] {
+    border-bottom: 1px dotted;
+    cursor: help;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #cccccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+label {
+    position: relative;
+    z-index: 2;
+    display: inline-block;
+}
+
+.fix {
+    zoom: 1;
+}
+
+.fix:before, .fix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.fleft {
+    float: left;
+}
+
+.fright {
+    float: right;
+}
+
+.text-left {
+    text-align: left;
+}
+
+.text-right {
+    text-align: right;
+}
+
+.text-center {
+    text-align: center;
+}
+
+h1, .title_1 {
+    font-size: 38.5px;
+    line-height: 40px;
+    font-weight: normal;
+}
+
+h3, .title_3 {
+    font-size: 21px;
+    line-height: 40px;
+    font-weight: normal;
+}
+
+h4, .title_4 {
+    font-size: 21px;
+    line-height: 40px;
+    font-weight: normal;
+}
+
+h5, .title_5 {
+    font-size: 14px;
+    line-height: 40px;
+    font-weight: bold;
+}
+
+h6, .title_6 {
+    font-size: 11.9px;
+    line-height: 40px;
+    font-weight: bold;
+}
+
+p {
+    margin: 10px 0 10px 0;
+    line-height: 1.5;
+    font-size: 14px;
+}
+
+li {
+    list-style: none;
+}
+
+.fix {
+    zoom: 1;
+}
+
+.fix:before, .fix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* 字体大小 */
+.f12 {
+    font-size: 12px;
+}
+
+.f14 {
+    font-size: 14px;
+}
+
+.f16 {
+    font-size: 16px;
+}
+
+.f20 {
+    font-size: 20px;
+}
+
+.f32 {
+    font-size: 32px;
+}
+
+/* 字体粗细 */
+.fN {
+    font-weight: normal;
+}
+
+.fB {
+    font-weight: bold;
+}
+
+/* 间距 */
+.mt0 {
+    margin-top: 0;
+}
+
+.mt5 {
+    margin-top: 5px;
+}
+
+.mt7 {
+    margin-top: 7px;
+}
+
+.mt10 {
+    margin-top: 10px;
+}
+
+.ml10 {
+    margin-left: 10px;
+}
+
+.mr10 {
+    margin-right: 10px;
+}
+
+.mt20 {
+    margin-top: 20px;
+}
+
+.ml20 {
+    margin-left: 20px;
+}
+
+.mr20 {
+    margin-right: 20px;
+}
+
+.mb20 {
+    margin-bottom: 20px;
+}
+
+.mt30 {
+    margin-top: 30px;
+}
+
+.ml30 {
+    margin-left: 30px;
+}
+
+.mr30 {
+    margin-right: 30px;
+}
+
+.mb30 {
+    margin-bottom: 30px;
+}
+
+.mt40 {
+    margin-top: 40px;
+}
+
+.mt15 {
+    margin-top: 15px;
+}
+
+.mb40 {
+    margin-bottom: 40px;
+}
+
+/* 浮动 */
+.fl {
+    float: left;
+}
+
+.fr {
+    float: right;
+}
+
+/* 省略号 */
+.etc {
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.etc3 {
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+}
+
+.etc3-1 {
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+}
+
+.clearfix:after {
+    display: block;
+    overflow: hidden;
+    clear: both;
+    height: 0;
+    visibility: hidden;
+    content: ".";
+}
+
+/*文字顔色*/
+
+/* 重要文字 */
+.cGray,
+.cGray:visited,
+.cGray a {
+    color: #363636;
+}
+
+/* 二级文字 */
+.cDGray,
+.cDGray:visited,
+.cDGray a {
+    color: #696969;
+}
+
+/* 三级文字 */
+.cEGray,
+.cEGray:visited,
+.cEGray a {
+    color: #f6f6f6;
+}
+
+.cRed {
+    color: #e13231
+}
+
+.cGreen {
+    color: #89d387
+}
+
+.border-none {
+    border: none !important;
+}
+
+.posr {
+    position: relative;
+}
+
+.abso {
+    position: absolute;
+}
+
+/*按钮*/
+.btn {
+    opacity: 0.8;
+    cursor: pointer;
+    outline: none;
+    &:hover {
+        opacity: 1;
+    }
+}
+
+.ct-main-1200 {
+    width: 1200px;
+    margin: 0 auto;
+    padding: 0;
+}
+
+/*# sourceMappingURL=reset.css.map */
